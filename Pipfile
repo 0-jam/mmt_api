@@ -10,6 +10,7 @@ graphene = "*"
 fastapi = "*"
 uvicorn = "*"
 python-dotenv = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 flake8 = "*"
