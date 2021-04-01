@@ -13,13 +13,14 @@ def get_settings():
 settings = get_settings()
 
 mc_model = MCModel()
-mc_model.load_model(settings.mc_model_path)
 
 
 class Query(graphene.ObjectType):
-    markovify = graphene.String()
+    markovify = graphene.String(index=graphene.Int(default_value=0))
 
-    def resolve_markovify(self, info):
+    def resolve_markovify(self, info, index):
+        mc_model.load_model(settings.get_mc_model(index))
+
         return mc_model.generate_sentence()
 
 
