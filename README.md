@@ -6,12 +6,12 @@ The text generater API based on [0-jam/regen_my_sentences](https://github.com/0-
 
 1. [Environment](#environment)
 1. [Installation](#installation)
-    1. [macOS](#macos)
+  1. [macOS](#macos)
 1. [Configuration](#configuration)
-    1. [Generate your Markovify model](#generate-your-markovify-model)
-    1. [Specify the Markovify model](#specify-the-markovify-model)
+  1. [Generate your Markovify model](#generate-your-markovify-model)
+  1. [Specify the Markovify model](#specify-the-markovify-model)
 1. [Usage](#usage)
-    1. [Run locally](#run-locally)
+  1. [Run locally](#run-locally)
 
 ---
 
@@ -48,7 +48,8 @@ The text generater API based on [0-jam/regen_my_sentences](https://github.com/0-
 Create `.env` and specify the model path:
 
 ```bash
-MC_MODEL_PATH=/path/to/your_markovify_model.json
+# You can specify multiple model files by space between the model file
+MC_MODEL_PATH="/path/to/your_markovify_model.json /path/to/second_model.json"
 ```
 
 ## Usage

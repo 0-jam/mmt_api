@@ -6,3 +6,6 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = '.env'
+
+    def get_mc_model(self, index):
+        return self.mc_model_path.split(' ')[index]
