@@ -64,6 +64,14 @@ Run `% uvicorn markovify_sentence:app --reload` then throw this simple query to 
 }
 ```
 
+You can choose models by specifying index of `MC_MODEL_PATH` (starts with 0)
+
+```
+{
+  markovify(index: 1)
+}
+```
+
 It will returns:
 
 ```json
